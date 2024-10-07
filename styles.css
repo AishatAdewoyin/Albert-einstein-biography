@@ -258,3 +258,61 @@ nav.custom-navbar {
   }
 }
 
+.personal-life-section {
+  background-color: #66fcf1;
+  color: #333;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.personal-life-section h2 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Personal Life Section */
+.personal-life-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.personal-life-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.personal-life-box i {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.personal-life-box p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .personal-life-section {
+    padding: 3rem 1rem;
+  }
+
+  .personal-life-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .personal-life-box p {
+    font-size: 1rem;
+  }
+
+  .personal-life-box i {
+    font-size: 1.5rem;
+  }
+}
