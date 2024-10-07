@@ -23,6 +23,7 @@ h2 {
   font-family: "Elsie", sans-serif;
   font-size: 4rem;
   color: #34b3aa;
+  margin: 5rem 0;
 }
 
 .hero-section {
@@ -173,41 +174,47 @@ nav.custom-navbar {
 
 /* Left corner design */
 .header-left-design {
-  border-radius: 100%;
-  border: 1px solid #34b3aa;
-  height: 13rem;
-  width: 30rem;
-  position: absolute;
-  top: 10rem;
-  left: -10rem;
-  overflow: hidden;
-  z-index: 0;
+    border-radius: 100%;
+    border: 1px solid #34b3aa;
+    height: 17rem;
+    width: 30rem;
+    position: absolute;
+    top: 3rem;
+    left: -13rem;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0.3;
+    rotate: 20deg;
 }
 
 /* Right corner design */
 .header-right-design {
   border-radius: 100%;
   border: 1px solid #34b3aa;
-  height: 10rem;
-  width: 21rem;
+  height: 16rem;
+  width: 25rem;
   position: absolute;
-  bottom: 1rem;
-  right: -5rem;
+  bottom: -8rem;
+  right: -9rem;
   overflow: hidden;
-  z-index: 0;
+  z-index: 3;
+  opacity: 0.3;
+  rotate: 157deg;
 }
 
 /* Top-right corner design */
 .header-top-right-design {
   border-radius: 100%;
   border: 1px solid #34b3aa;
-  height: 12rem;
-  width: 31rem;
+  height: 15rem;
+  width: 29rem;
   position: absolute;
-  top: 100px;
+  top: 21rem;
   right: -15rem;
   overflow: hidden;
-  z-index: 0;
+  z-index: 4;
+  opacity: 0.3;
+  rotate: 170deg;
 }
 
 /* making it responsive */
@@ -513,7 +520,7 @@ nav.custom-navbar {
 
 .personal-life-section h2 {
   font-size: 4rem;
-  color: #040918;
+  color: #e0e3ed;
   font-family: "Old Standard TT", serif;
 }
 
@@ -522,6 +529,7 @@ nav.custom-navbar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin: 3rem 0;
 }
 
 .personal-life-box {
@@ -538,7 +546,7 @@ nav.custom-navbar {
 
 .personal-life-box i {
   font-size: 6rem;
-  color: #000;
+  color: #040918;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
 }
