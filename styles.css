@@ -260,7 +260,7 @@ nav.custom-navbar {
 
 .personal-life-section {
   background-color: #66fcf1;
-  color: #333;
+  color: #000;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -279,23 +279,47 @@ nav.custom-navbar {
 }
 
 .personal-life-box {
-  background-color: #fff;
+  background-color: #66fcf1;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .personal-life-box i {
-  font-size: 2rem;
+  font-size: 6rem;
   color: #000;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .personal-life-box p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #333;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Hover Effects */
+.personal-life-box:hover {
+  transform: scale(1.05); /* Slightly scale up the box */
+  box-shadow: rgba(50, 50, 93, 0.35) 0px 60px 120px -25px,
+              rgba(0, 0, 0, 0.4) 0px 40px 80px -35px,
+              rgba(10, 37, 64, 0.45) 0px -3px 7px 0px inset;
+  background-color: #000; /* Change background color on hover */
+  color: #66fcf1;
+}
+
+.personal-life-box:hover i {
+  transform: rotate(360deg); /* Icon spins on hover should rotate */
+  color: #66fcf1;
+}
+
+.personal-life-box:hover p {
+  color: #66fcf1;
 }
 
 /* Responsive adjustments */
@@ -313,6 +337,6 @@ nav.custom-navbar {
   }
 
   .personal-life-box i {
-    font-size: 1.5rem;
+    font-size: 4rem;
   }
 }
