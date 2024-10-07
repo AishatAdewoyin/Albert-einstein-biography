@@ -215,3 +215,46 @@ nav.custom-navbar {
     display: none; /* Hide the corner designs on mobile */
   }
 }
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+  }
+
+  .hero-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-description p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .navbar-links {
+    padding: 1rem;
+  }
+
+  .navbar-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger-menu {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  .header-left-design, .header-right-design, .header-top-right-design {
+    display: none;
+  }
+}
+
