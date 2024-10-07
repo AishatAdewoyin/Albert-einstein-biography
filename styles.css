@@ -513,7 +513,6 @@ nav.custom-navbar {
 
 .personal-life-section {
   background-color: #040918;
-  color: #040918;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -522,6 +521,12 @@ nav.custom-navbar {
   font-size: 4rem;
   color: #e0e3ed;
   font-family: "Old Standard TT", serif;
+  margin: 3rem 0;
+}
+
+.personal-life-section p {
+  color: #e0e3ed;
+  margin: 2rem 0;
 }
 
 /* Grid Layout for Personal Life Section */
@@ -606,7 +611,7 @@ nav.custom-navbar {
 .career-section h2 {
   font-size: 3rem;
   color: #34b3aa;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-family: "Old Standard TT", serif;
 }
 
@@ -615,6 +620,7 @@ nav.custom-navbar {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   align-items: start;
+  margin: 5rem 0;
 }
 
 .career-item {
@@ -667,5 +673,203 @@ nav.custom-navbar {
 
   .career-item i {
     font-size: 2.5rem;
+  }
+}
+
+/* Learn More Section */
+.learn-more-section {
+  place-content: center;
+  align-items: center;
+  background-color: #1c2541;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  height: min-content;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Content Styling */
+.learn-more-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.learn-more-content h2 {
+  font-size: 2.5rem;
+  color: #34b3aa; 
+  margin-bottom: 20px;
+}
+
+.learn-more-content p {
+  font-size: 1rem;
+  color: #34b3aa;
+  margin-bottom: 40px;
+  padding: 0 15rem;
+}
+
+/* Buttons Styling */
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.learn-more-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Explore More Button */
+.explore-more-button {
+  background-color: #34b3aa; /* Teal color */
+  color: #040918;
+}
+
+.explore-more-button:hover {
+  background-color: #2e9b91; /* Darker teal on hover */
+}
+
+/* Download Summary Button */
+.download-summary-button {
+  background-color: #e0e3ed; /* Light gray color */
+  color: #040918;
+}
+
+.download-summary-button:hover {
+  background-color: #cfd2db; /* Slightly darker gray on hover */
+  color: #000;
+}
+
+/* Faded Design Elements */
+.design-element-left, .design-element-right {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 50%; 
+  z-index: 0;
+}
+
+.design-element-left {
+  width: 300px;
+  height: 300px;
+  top: 50px;
+  left: -150px;
+}
+
+.design-element-right {
+  width: 400px;
+  height: 400px;
+  bottom: 50px;
+  right: -200px;
+}
+
+/* RESPONSIVE STYLING */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .learn-more-section {
+    padding: 80px; /* Reduce padding for smaller screens */
+  }
+
+  .learn-more-content h2 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .learn-more-content p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+    padding: 0 10rem; /* Adjust padding for smaller screens */
+  }
+
+  .learn-more-button {
+    padding: 12px 25px; /* Slightly smaller buttons */
+    font-size: 1.1rem;
+  }
+
+  .design-element-left {
+    width: 200px;
+    height: 200px; /* Scale down left design element */
+    left: -100px;
+  }
+
+  .design-element-right {
+    width: 300px;
+    height: 300px; /* Scale down right design element */
+    right: -150px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .learn-more-section {
+    padding: 50px 30px; /* Reduce padding further for mobile */
+  }
+
+  .learn-more-content h2 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .learn-more-content p {
+    font-size: 0.85rem; /* Smaller paragraph text for mobile */
+    padding: 0 5rem; /* Narrower padding on mobile */
+  }
+
+  .buttons-container {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 15px;
+  }
+
+  .learn-more-button {
+    padding: 10px 20px; /* Smaller button padding */
+    font-size: 1rem;
+  }
+
+  .design-element-left {
+    width: 150px;
+    height: 150px; /* Scale down left design element more */
+    left: -80px;
+  }
+
+  .design-element-right {
+    width: 200px;
+    height: 200px; /* Scale down right design element more */
+    right: -100px;
+  }
+}
+
+/* Extra Small Screens (Very small mobile) */
+@media (max-width: 480px) {
+  .learn-more-section {
+    padding: 40px 15px; /* Even smaller padding for very small screens */
+  }
+
+  .learn-more-content h2 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .learn-more-content p {
+    font-size: 0.75rem; /* Smallest paragraph text for small screens */
+    padding: 0 2rem;
+  }
+
+  .learn-more-button {
+    padding: 8px 18px; /* Further reduce button size */
+    font-size: 0.9rem;
+  }
+
+  .design-element-left {
+    width: 100px;
+    height: 100px; /* Smallest size for left design element */
+    left: -50px;
+  }
+
+  .design-element-right {
+    width: 150px;
+    height: 150px; /* Smallest size for right design element */
+    right: -75px;
   }
 }
