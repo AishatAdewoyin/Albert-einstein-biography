@@ -1,4 +1,3 @@
-/* Reset some default margins/padding */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +17,12 @@ h1 {
   line-height: 1em;
   color: #66fcf1;
   text-transform: uppercase;
+}
+
+h2{
+  font-family: "Elsie", sans-serif;
+  font-size: 4rem;
+  color: #66fcf1;
 }
 
 .hero-section {
@@ -125,6 +130,7 @@ nav.custom-navbar {
   border-bottom-right-radius: 10rem;
   transition: filter 0.3s ease;
   filter: grayscale(1) brightness(0.6);
+  margin-bottom: 10rem;
 }
 
 /* Left corner design */
@@ -166,7 +172,7 @@ nav.custom-navbar {
   z-index: 0;
 }
 
-/* Responsive Styling */
+/* making it responsive */
 @media (min-width: 810px) {
   .hero-section {
     padding: 6rem 3rem;
@@ -212,7 +218,7 @@ nav.custom-navbar {
   .header-left-design,
   .header-right-design,
   .header-top-right-design {
-    display: none; /* Hide the corner designs on mobile */
+    display: none;
   }
 }
 
@@ -258,6 +264,196 @@ nav.custom-navbar {
   }
 }
 
+/* About Section Styling */
+.einstein-section {
+  background-color: #66fcf1;
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for flip effect */
+.flip-container {
+  perspective: 1500px;
+}
+
+.flipper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* Front and back sides of the flip */
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.back {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Styling the thinking bubble */
+.thinking-bubble {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000; /* Front text color set to black */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.thinking-bubble h2 {
+  font-size: 1.6rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.thinking-bubble:before, .thinking-bubble:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+}
+
+.thinking-bubble:before {
+  width: 60px;
+  height: 60px;
+  bottom: -45px;
+  left: 150px;
+}
+
+.thinking-bubble:after {
+  width: 30px;
+  height: 30px;
+  bottom: -70px;
+  left: 185px;
+}
+
+.did-you-know h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.did-you-know p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Flip animated */
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flipper {
+    width: 350px;
+    height: 220px;
+  }
+
+  .thinking-bubble {
+    width: 300px;
+    height: 180px;
+  }
+
+  .thinking-bubble:before {
+    width: 40px;
+    height: 40px;
+    bottom: -35px;
+    left: 100px;
+  }
+
+  .thinking-bubble:after {
+    width: 20px;
+    height: 20px;
+    bottom: -55px;
+    left: 120px;
+  }
+
+  .thinking-bubble h2 {
+    font-size: 1.4rem;
+  }
+
+  .did-you-know h3 {
+    font-size: 1.3rem;
+  }
+
+  .did-you-know p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flipper {
+    width: 280px;
+    height: 180px;
+  }
+
+  .thinking-bubble {
+    width: 250px;
+    height: 150px;
+  }
+
+  .thinking-bubble:before {
+    width: 35px;
+    height: 35px;
+    bottom: -30px;
+    left: 80px;
+  }
+
+  .thinking-bubble:after {
+    width: 15px;
+    height: 15px;
+    bottom: -45px;
+    left: 105px;
+  }
+
+  .thinking-bubble h2 {
+    font-size: 1.2rem;
+  }
+
+  .did-you-know h3 {
+    font-size: 1.2rem;
+  }
+
+  .did-you-know p {
+    font-size: 0.9rem;
+  }
+}
+
+
 .personal-life-section {
   background-color: #66fcf1;
   color: #000;
@@ -266,9 +462,10 @@ nav.custom-navbar {
 }
 
 .personal-life-section h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #000;
   margin-bottom: 2rem;
+  font-family: "Old Standard TT", serif;
 }
 
 /* Grid Layout for Personal Life Section */
@@ -298,23 +495,23 @@ nav.custom-navbar {
 
 .personal-life-box p {
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.5;
   font-weight: 500;
   color: #000;
 }
 
 /* Hover Effects */
 .personal-life-box:hover {
-  transform: scale(1.05); /* Slightly scale up the box */
+  transform: scale(1.05); 
   box-shadow: rgba(50, 50, 93, 0.35) 0px 60px 120px -25px,
               rgba(0, 0, 0, 0.4) 0px 40px 80px -35px,
               rgba(10, 37, 64, 0.45) 0px -3px 7px 0px inset;
-  background-color: #000; /* Change background color on hover */
+  background-color: #000; 
   color: #66fcf1;
 }
 
 .personal-life-box:hover i {
-  transform: rotate(360deg); /* Icon spins on hover should rotate */
+  transform: rotate(360deg); 
   color: #66fcf1;
 }
 
@@ -330,6 +527,7 @@ nav.custom-navbar {
 
   .personal-life-section h2 {
     font-size: 3rem;
+
   }
 
   .personal-life-box p {
@@ -353,6 +551,7 @@ nav.custom-navbar {
   font-size: 3rem;
   color: #66fcf1;
   margin-bottom: 2rem;
+  font-family: "Old Standard TT", serif;
 }
 
 .career-grid {
@@ -377,20 +576,20 @@ nav.custom-navbar {
 }
 
 .career-item h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
 .career-item p {
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 /* Hover effect */
 .career-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.104);
   border-left-color: #fff;
-  transition: background-color 0.3s ease, border-left-color 0.3s ease;
+  transition: background-color 0.4s ease, border-left-color 0.4s ease;
 }
 
 @media (max-width: 768px) {
@@ -403,7 +602,7 @@ nav.custom-navbar {
   }
 
   .career-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .career-item p {
