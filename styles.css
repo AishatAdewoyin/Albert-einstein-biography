@@ -19,14 +19,14 @@ h1 {
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-family: "Elsie", sans-serif;
   font-size: 4rem;
   color: #66fcf1;
 }
 
 .hero-section {
-  background-color: #000;
+  background-color: #0B132B;
   padding: 6rem 3rem;
   min-height: 50vh;
   display: flex;
@@ -51,7 +51,7 @@ h2{
 
 /* Navbar Styling */
 nav.custom-navbar {
-  background-color: #000;
+  background-color: #0B132B;
   color: #66fcf1;
   display: flex;
   justify-content: space-between;
@@ -106,7 +106,7 @@ nav.custom-navbar {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #0B132B;
     padding: 1rem;
   }
 
@@ -119,6 +119,7 @@ nav.custom-navbar {
   }
 }
 
+
 /* Full-width hero image */
 .hero-image {
   display: block;
@@ -128,10 +129,23 @@ nav.custom-navbar {
   object-position: center;
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
-  transition: filter 0.3s ease;
-  filter: grayscale(1) brightness(0.6);
-  margin-bottom: 10rem;
+
+  /* Apply grayscale and brightness */
+  filter: grayscale(1) brightness(0.8);
+
+  /* Apply color overlay */
+  background-color: #0B132B; /* Dark blue */
+  mix-blend-mode: multiply; /* Overlay the color onto the image */
+  transition: filter 0.3s ease, background-color 0.3s ease;
 }
+
+/* Hover effect */
+.hero-image:hover {
+  filter: grayscale(0) brightness(1); /* Remove grayscale on hover */
+  mix-blend-mode: normal; /* Remove the overlay on hover */
+}
+
+
 
 /* Left corner design */
 .header-left-design {
@@ -259,7 +273,9 @@ nav.custom-navbar {
     border-bottom-right-radius: 2rem;
   }
 
-  .header-left-design, .header-right-design, .header-top-right-design {
+  .header-left-design,
+  .header-right-design,
+  .header-top-right-design {
     display: none;
   }
 }
@@ -289,7 +305,8 @@ nav.custom-navbar {
 }
 
 /* Front and back sides of the flip */
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -297,16 +314,17 @@ nav.custom-navbar {
 }
 
 .front {
-  background-color: #fff;
+  background-color: #0B132B;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(174, 174, 174, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .back {
-  background-color: #000;
+  background-color: #0B132B;
   color: #fff;
   transform: rotateY(180deg);
   border-radius: 20px;
@@ -323,27 +341,28 @@ nav.custom-navbar {
   height: 250px;
   background-color: #fff;
   border-radius: 50%;
-  border: 5px solid #000;
+  border: 5px solid #0B132B;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000; /* Front text color set to black */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #0B132B; /* Front text color set to black */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 
 .thinking-bubble h2 {
   font-size: 1.6rem;
-  color: #000;
+  color: #0B132B;
   text-transform: uppercase;
 }
 
-.thinking-bubble:before, .thinking-bubble:after {
-  content: '';
+.thinking-bubble:before,
+.thinking-bubble:after {
+  content: "";
   position: absolute;
   background-color: #fff;
-  border: 5px solid #000;
+  border: 5px solid #0B132B;
   border-radius: 50%;
 }
 
@@ -363,12 +382,11 @@ nav.custom-navbar {
 
 .did-you-know h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .did-you-know p {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.1;
 }
 
 /* Flip animated */
@@ -411,11 +429,20 @@ nav.custom-navbar {
   }
 
   .did-you-know p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    line-height: 1;
   }
 }
 
 @media (max-width: 480px) {
+
+  .einstein-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
   .flipper {
     width: 280px;
     height: 180px;
@@ -441,30 +468,28 @@ nav.custom-navbar {
   }
 
   .thinking-bubble h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .did-you-know h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .did-you-know p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
-
 .personal-life-section {
-  background-color: #66fcf1;
-  color: #000;
+  background-color: #0B132B;
+  color: #0B132B;
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .personal-life-section h2 {
   font-size: 4rem;
-  color: #000;
-  margin-bottom: 2rem;
+  color: #0B132B;
   font-family: "Old Standard TT", serif;
 }
 
@@ -476,14 +501,15 @@ nav.custom-navbar {
 }
 
 .personal-life-box {
-  background-color: #66fcf1;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .personal-life-box i {
@@ -497,26 +523,26 @@ nav.custom-navbar {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 500;
-  color: #000;
+  color: #0B132B;
 }
 
 /* Hover Effects */
 .personal-life-box:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: rgba(50, 50, 93, 0.35) 0px 60px 120px -25px,
-              rgba(0, 0, 0, 0.4) 0px 40px 80px -35px,
-              rgba(10, 37, 64, 0.45) 0px -3px 7px 0px inset;
-  background-color: #000; 
-  color: #66fcf1;
+    rgba(0, 0, 0, 0.4) 0px 40px 80px -35px,
+    rgba(10, 37, 64, 0.45) 0px -3px 7px 0px inset;
+  background-color: #66fcf1;
+  color: #0B132B;
 }
 
 .personal-life-box:hover i {
-  transform: rotate(360deg); 
-  color: #66fcf1;
+  transform: rotate(360deg);
+  color: #0B132B;
 }
 
 .personal-life-box:hover p {
-  color: #66fcf1;
+  color: #0B132B;
 }
 
 /* Responsive adjustments */
@@ -527,7 +553,6 @@ nav.custom-navbar {
 
   .personal-life-section h2 {
     font-size: 3rem;
-
   }
 
   .personal-life-box p {
@@ -539,9 +564,8 @@ nav.custom-navbar {
   }
 }
 
-
 .career-section {
-  background-color: #000;
+  background-color: #0B132B;
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;
@@ -613,4 +637,3 @@ nav.custom-navbar {
     font-size: 2.5rem;
   }
 }
-
