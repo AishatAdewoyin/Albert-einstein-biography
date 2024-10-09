@@ -1,4 +1,4 @@
-# Einstein's Biography Website
+## Albert Einstein's Biography Website
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -48,7 +48,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/your-username/einstein-biography.git
+   git clone [https://github.com/aishatadewoyin/albert-einstein-biography.git](https://github.com/AishatAdewoyin/Albert-einstein-biography)
 ```
 
 2. **Navigate to the project folder**:
@@ -106,7 +106,7 @@ This project is designed to be fully responsive across different screen sizes, e
    - Explore More Button: Background color #34b3aa (teal) with a hover effect that darkens the button.
    - Download Summary Button: Background color #e0e3ed (light gray) with a hover effect that slightly darkens the button.
 
-## Books Section
+## 8. Books Section
 - The Books Section highlights Einstein’s most notable works and allows users to download key books.
    - Grid Layout: The section uses a 2-column grid:
       - Left Column: Displays a book cover with a blue gradient overlay.
@@ -114,9 +114,9 @@ This project is designed to be fully responsive across different screen sizes, e
       - Bottom Right Column: Have some related texts remaining fron the top right column.
       - Bottom Left Column: Contains image of Einstein in a circled frame.
 
-## Design Elements and Icons
-   - The website features multiple design elements to create a polished, professional look:
-   -  Font Awesome Icons: Icons are used to visually enhance sections such as "Personal Life" and "Career Highlights".
+## 9. Design Elements and Icons
+- The website features multiple design elements to create a polished, professional look:
+   - Font Awesome Icons: Icons are used to visually enhance sections such as "Personal Life" and "Career Highlights".
    - CSS Animations and Hover Effects: Subtle hover animations on buttons and flip boxes,          enhancing user experience without overwhelming the design.
    - Gradients and Overlays: Used to add a modern, clean look to images without detracting from content readability.
 ## Example Icon Usage:
@@ -124,12 +124,12 @@ This project is designed to be fully responsive across different screen sizes, e
 <i class="fas fa-child"></i>   <!-- Font Awesome icon for the Personal Life Section -->
 ```
 
-## Credits and Acknowledgements
+## 10. Credits and Acknowledgements
 - I used various resources to bring together the design and functionality:
-- Font Awesome: For providing scalable icons used across multiple sections.
-- Google Fonts: For custom typography using fonts like "Elsie" and "Old Standard TT".
-- Images: Public domain images of Albert Einstein and books used in various sections.
-- Inspiration: The project is inspired by the desire to create an educational and visually appealing biography of Albert Einstein.
+      - Font Awesome: For providing scalable icons used across multiple sections.
+      - Google Fonts: For custom typography using fonts like "Elsie" and "Old Standard TT".
+      - Images: Public domain images of Albert Einstein and books used in various sections.
+      - Inspiration: The project is inspired by the desire to create an educational and visually appealing biography of Albert Einstein.
 
 ## Tutor
 - **Samuel Eke** - [GitHub](https://github.com/samuel-eke)
@@ -140,6 +140,13 @@ This project is designed to be fully responsive across different screen sizes, e
 - For any queries or issues regarding this project, please contact the eProject Team or Mr. Sam at
    - **eprojects@aptech.com** or
    - **Samuel Eke** - Tutor [GitHub](https://github.com/samuel-eke)
+
+## How I should improve this:
+   -  I am very keen on improving this project using react and tailwind, which I was using up until I ran into errors due to some deprecated dependencies that came with my react installation.
+   - I had little time to submit the project, so I had to use what is available
+   - I will like to add some auths to it
+   - also improve it by using some available technologies to store books or for users to be able to create a library of there own where the can store and retrieve books.
+
 
 ### Do not hesitate to reachout to me (if need be)
 ### Happy coding 😊
