@@ -145,7 +145,7 @@ This project is designed to be fully responsive across different screen sizes, e
    -  I am very keen on improving this project using react and tailwind, which I was using up until I ran into errors due to some deprecated dependencies that came with my react installation.
    - I had little time to submit the project, so I had to use what is available
    - I will like to add some auths to it
-   - also improve it by using some available technologies to store books or for users to be able to create a library of there own where the can store and retrieve books.
+   - also improve it by using some available technologies to store books or for users to be able to create a library of there own where the can store and retrieve books
 
 
 ### Do not hesitate to reachout to me (if need be)
