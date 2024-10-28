@@ -964,12 +964,6 @@ nav.custom-navbar {
   justify-content: center;
 }
 
-books-grid {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-
 /* Image Styling */
 .book-image,
 .book-person {
