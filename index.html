@@ -35,211 +35,223 @@
 </head>
 
 <body>
-  <section class="hero-section">
-    <!-- Navbar -->
-    <nav class="custom-navbar">
-      <div><a href="#" class="navbar-brand">Einstein's Biography</a></div>
+  <header>
+    <section class="hero-section">
+      <!-- Navbar -->
+      <nav class="custom-navbar">
+        <div><a href="#" class="navbar-brand">Einstein's Biography</a></div>
 
 
-      <!-- Hamburger Menu -->
-      <div class="hamburger-menu" id="hamburger">&#9776;</div>
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburger">&#9776;</div>
 
 
-      <ul class="navbar-links" id="navbarLinks">
-        <li><a href="#who-is-einstein">Who is Albert Einstein</a></li>
-        <li><a href="#personal-life">Personal Life</a></li>
-        <li><a href="#career">Career</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#books">Books</a></li>
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="#who-is-einstein">Who is Albert Einstein</a></li>
+          <li><a href="#personal-life">Personal Life</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#books">Books</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Design -->
+      <div class="header-left-design"></div>
+      <div class="header-right-design"></div>
+      <div class="header-top-right-design"></div>
+
+      <!-- Hero Description -->
+      <div class="hero-description">
+        <h1 class="header-text">Einstein</h1>
+        <p>
+          Embark on an extraordinary journey through the life and achievements
+          of Albert Einstein – the scientific revolutionary who reshaped our
+          understanding of the cosmos.
+        </p>
+      </div>
+    </section>
+
+    <div class="hero-image-container">
+      <img src="./images/heroimage.jpg" alt="Einstein" class="hero-image" />
+    </div>
+  </header>
+
+  <main>
+    <section id="who-is-einstein" class="einstein-section">
+      <div class="flip-container" id="flip-container">
+        <div class="flipper">
+          <!-- Front: Title in the Thinking Bubble -->
+          <div class="front">
+            <div class="thinking-bubble">
+              <h2>Who is Albert Einstein? 💭</h2>
+            </div>
+          </div>
+          <!-- Back: "Did You Know?" Paragraph -->
+          <div class="back">
+            <div class="did-you-know">
+              <h3>Did You Know?</h3>
+              <p>
+                Besides his famous theories of relativity, Albert Einstein co-invented a safer <em>refrigeration
+                  system</em> in 1926. His work on the <em>photoelectric effect</em> led to the development of modern
+                solar panels. And without his <em>theory of general relativity</em>, technologies like <em>GPS</em>
+                would
+                not work today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="personal-life" class="personal-life-section">
+      <h2>Personal Life</h2>
+      <p>His early life highlighted his innate curiosity and relentless quest for knowledge, ultimately shaping his
+        scientific endeavours.</p>
+      <div class="personal-life-grid">
+        <div class="personal-life-box">
+          <i class="fas fa-child"></i>
+          <p>
+            Albert Einstein was born on March 14, 1879, in Ulm, Kingdom of Württemberg, in the German Empire. He was the
+            first child of Hermann Einstein, a salesman and engineer, and Pauline Koch. His early education was in
+            Munich,
+            where his family had moved to. Despite not being a fan of traditional schooling, Einstein showed an early
+            interest in mathematics and physics.
+          </p>
+        </div>
+        <div class="personal-life-box">
+          <i class="fas fa-heart"></i>
+          <p>
+            Einstein was married twice, first to Mileva Marić, a fellow physics student at Zurich Polytechnic, and later
+            to his cousin Elsa Einstein. He had two sons, Hans Albert and Eduard, with Mileva, and maintained close
+            relationships with his family despite the challenges in his personal life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="career-section">
+      <h2>Career Highlights</h2>
+      <p>Abert Einstein’s career was punctuated by his uniquely creative approach to scientific exploration, making him
+        a
+        figure for the ages.</p>
+      <div class="career-grid">
+        <div class="career-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>1905 – Annus Mirabilis</h3>
+          <p>
+            Einstein published four groundbreaking papers, including the theory of special relativity and the famous
+            equation E=mc², revolutionizing modern physics.
+          </p>
+        </div>
+        <div class="career-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>1909 – Professor of Theoretical Physics</h3>
+          <p>
+            Einstein became a professor at the University of Zurich, marking the beginning of his academic career as a
+            teacher and researcher.
+          </p>
+        </div>
+        <div class="career-item">
+          <i class="fas fa-globe"></i>
+          <h3>1915 – General Theory of Relativity</h3>
+          <p>
+            Einstein presented his theory of general relativity, a monumental achievement that redefined our
+            understanding
+            of gravity and spacetime.
+          </p>
+        </div>
+        <div class="career-item">
+          <i class="fas fa-award"></i>
+          <h3>1921 – Nobel Prize in Physics</h3>
+          <p>
+            Einstein was awarded the Nobel Prize in Physics for his explanation of the photoelectric effect, a crucial
+            step in the development of quantum theory.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="research-section">
+      <h2>Nobel Winning Research</h2>
+      <p class="research-description">
+        Dive deep into Einstein’s Nobel Prize-winning research on the photoelectric effect – a groundbreaking study that
+        catalyzed quantum physics. Discover how this astonishing revelation continues to drive modern physics,
+        underlining
+        its unwavering significance.
+      </p>
+      <!-- Additional small section with overlay -->
+      <div class="small-section">
+        <div class="overlay-frame"></div>
+        <p>His work continues to influence a wide array of modern technologies, including quantum computing, solar
+          panels,
+          and GPS systems.</p>
+      </div>
+    </section>
+
+
+    <section id="achievements" class="achievements-section">
+      <h2>Achievements</h2>
+      <ul class="achievements-list">
+        <li><i class="fas fa-trophy"></i> Nobel Prize in Physics for the photoelectric effect (1921)</li>
+        <li><i class="fas fa-chart-line"></i> General Theory of Relativity (1915)</li>
+        <li><i class="fas fa-atom"></i> Development of E=mc² (1905)</li>
+        <li><i class="fas fa-brain"></i> Groundbreaking work in quantum theory and statistical mechanics</li>
+        <li><i class="fas fa-globe"></i> Numerous contributions to philosophy of science and space-time theories</li>
       </ul>
-    </nav>
+    </section>
 
-    <!-- Header Design -->
-    <div class="header-left-design"></div>
-    <div class="header-right-design"></div>
-    <div class="header-top-right-design"></div>
 
-    <!-- Hero Description -->
-    <div class="hero-description">
-      <h1 class="header-text">Einstein</h1>
-      <p>
-        Embark on an extraordinary journey through the life and achievements
-        of Albert Einstein – the scientific revolutionary who reshaped our
-        understanding of the cosmos.
-      </p>
-    </div>
-  </section>
-
-  <div class="hero-image-container">
-    <img src="./images/heroimage.jpg" alt="Einstein" class="hero-image" />
-  </div>
-
-  <section id="who-is-einstein" class="einstein-section">
-    <div class="flip-container" id="flip-container">
-      <div class="flipper">
-        <!-- Front: Title in the Thinking Bubble -->
-        <div class="front">
-          <div class="thinking-bubble">
-            <h2>Who is Albert Einstein? 💭</h2>
-          </div>
-        </div>
-        <!-- Back: "Did You Know?" Paragraph -->
-        <div class="back">
-          <div class="did-you-know">
-            <h3>Did You Know?</h3>
-            <p>
-              Besides his famous theories of relativity, Albert Einstein co-invented a safer <em>refrigeration
-                system</em> in 1926. His work on the <em>photoelectric effect</em> led to the development of modern
-              solar panels. And without his <em>theory of general relativity</em>, technologies like <em>GPS</em> would
-              not work today.
-            </p>
-          </div>
+    <section class="learn-more-section">
+      <div class="learn-more-content">
+        <h2>Learn More</h2>
+        <p>
+          Discover the extraordinary achievements and life story of Albert Einstein, a man who not only revolutionized
+          physics but also made contributions that continue to shape modern science and technology today.
+        </p>
+        <div class="buttons-container">
+          <a href="#explore" class="learn-more-button explore-more-button">Explore More</a>
+          <a href="#download" class="learn-more-button download-summary-button">Download Summary</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="personal-life" class="personal-life-section">
-    <h2>Personal Life</h2>
-    <p>His early life highlighted his innate curiosity and relentless quest for knowledge, ultimately shaping his
-      scientific endeavours.</p>
-    <div class="personal-life-grid">
-      <div class="personal-life-box">
-        <i class="fas fa-child"></i>
-        <p>
-          Albert Einstein was born on March 14, 1879, in Ulm, Kingdom of Württemberg, in the German Empire. He was the
-          first child of Hermann Einstein, a salesman and engineer, and Pauline Koch. His early education was in Munich,
-          where his family had moved to. Despite not being a fan of traditional schooling, Einstein showed an early
-          interest in mathematics and physics.
-        </p>
-      </div>
-      <div class="personal-life-box">
-        <i class="fas fa-heart"></i>
-        <p>
-          Einstein was married twice, first to Mileva Marić, a fellow physics student at Zurich Polytechnic, and later
-          to his cousin Elsa Einstein. He had two sons, Hans Albert and Eduard, with Mileva, and maintained close
-          relationships with his family despite the challenges in his personal life.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section id="career" class="career-section">
-    <h2>Career Highlights</h2>
-    <p>Abert Einstein’s career was punctuated by his uniquely creative approach to scientific exploration, making him a
-      figure for the ages.</p>
-    <div class="career-grid">
-      <div class="career-item">
-        <i class="fas fa-graduation-cap"></i>
-        <h3>1905 – Annus Mirabilis</h3>
-        <p>
-          Einstein published four groundbreaking papers, including the theory of special relativity and the famous
-          equation E=mc², revolutionizing modern physics.
-        </p>
-      </div>
-      <div class="career-item">
-        <i class="fas fa-chalkboard-teacher"></i>
-        <h3>1909 – Professor of Theoretical Physics</h3>
-        <p>
-          Einstein became a professor at the University of Zurich, marking the beginning of his academic career as a
-          teacher and researcher.
-        </p>
-      </div>
-      <div class="career-item">
-        <i class="fas fa-globe"></i>
-        <h3>1915 – General Theory of Relativity</h3>
-        <p>
-          Einstein presented his theory of general relativity, a monumental achievement that redefined our understanding
-          of gravity and spacetime.
-        </p>
-      </div>
-      <div class="career-item">
-        <i class="fas fa-award"></i>
-        <h3>1921 – Nobel Prize in Physics</h3>
-        <p>
-          Einstein was awarded the Nobel Prize in Physics for his explanation of the photoelectric effect, a crucial
-          step in the development of quantum theory.
-        </p>
-      </div>
-    </div>
-  </section>
+      <!-- Faded Design Elements -->
+      <div class="design-element-left"></div>
+      <div class="design-element-right"></div>
+    </section>
 
-  <section id="research" class="research-section">
-    <h2>Nobel Winning Research</h2>
-    <p class="research-description">
-      Dive deep into Einstein’s Nobel Prize-winning research on the photoelectric effect – a groundbreaking study that
-      catalyzed quantum physics. Discover how this astonishing revelation continues to drive modern physics, underlining
-      its unwavering significance.
-    </p>
-    <!-- Additional small section with overlay -->
-    <div class="small-section">
-      <div class="overlay-frame"></div>
-      <p>His work continues to influence a wide array of modern technologies, including quantum computing, solar panels,
-        and GPS systems.</p>
-    </div>
-  </section>
-
-
-  <section id="achievements" class="achievements-section">
-    <h2>Achievements</h2>
-    <ul class="achievements-list">
-      <li><i class="fas fa-trophy"></i> Nobel Prize in Physics for the photoelectric effect (1921)</li>
-      <li><i class="fas fa-chart-line"></i> General Theory of Relativity (1915)</li>
-      <li><i class="fas fa-atom"></i> Development of E=mc² (1905)</li>
-      <li><i class="fas fa-brain"></i> Groundbreaking work in quantum theory and statistical mechanics</li>
-      <li><i class="fas fa-globe"></i> Numerous contributions to philosophy of science and space-time theories</li>
-    </ul>
-  </section>
-
-
-  <section class="learn-more-section">
-    <div class="learn-more-content">
-      <h2>Learn More</h2>
-      <p>
-        Discover the extraordinary achievements and life story of Albert Einstein, a man who not only revolutionized
-        physics but also made contributions that continue to shape modern science and technology today.
-      </p>
-      <div class="buttons-container">
-        <a href="#explore" class="learn-more-button explore-more-button">Explore More</a>
-        <a href="#download" class="learn-more-button download-summary-button">Download Summary</a>
-      </div>
-    </div>
-
-    <!-- Faded Design Elements -->
-    <div class="design-element-left"></div>
-    <div class="design-element-right"></div>
-  </section>
-
-  <section id="books" class="books-section">
-    <div class="books-grid">
+    <section id="books" class="books-section">
+      <div class="books-grid">
         <!-- First Group: Book Image and Text -->
         <div class="book-image">
-            <img src="images/books.jpg" alt="Stacked books" class="stacked-books">
+          <img src="images/books.jpg" alt="Stacked books" class="stacked-books">
         </div>
         <div class="book-content">
-            <h2>Connect with Einstein’s Literary Contributions</h2>
-            <p>
-                Explore Albert Einstein’s most famous works. These include "Relativity: The Special and General Theory" and
-                "The World As I See It". You can download them using the links below.
-            </p>
-            <div class="book-buttons">
-              <a href="books.html" class="download-button">Download Relativity: The Special and General Theory</a> <br>
-              <a href="books.html" class="download-button">Download The World As I See It</a>
-            </div>
+          <h2>Connect with Einstein’s Literary Contributions</h2>
+          <p>
+            Explore Albert Einstein’s most famous works. These include "Relativity: The Special and General Theory" and
+            "The World As I See It". You can download them using the links below.
+          </p>
+          <div class="book-buttons">
+            <a href="books.html" class="download-button">Download Relativity: The Special and General Theory</a> <br>
+            <a href="books.html" class="download-button">Download The World As I See It</a>
+          </div>
         </div>
 
         <!-- Second Group: Person Image and Description -->
         <div class="book-person">
-            <img src="images/person.png" alt="Albert Einstein" class="person-image">
+          <img src="images/person.png" alt="Albert Einstein" class="person-image">
         </div>
         <div class="person-description">
-            <p>
-                This image of Albert Einstein captures his deep connection with scientific exploration, reflecting his lifelong dedication to understanding the universe. Discover more about his legacy and contributions to modern science.
-            </p>
+          <p>
+            This image of Albert Einstein captures his deep connection with scientific exploration, reflecting his
+            lifelong dedication to understanding the universe. Discover more about his legacy and contributions to
+            modern science.
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
+  </main>
 
   <footer class="footer-section">
     <div class="footer-links">

@@ -41,6 +41,7 @@ h2 {
   text-align: center;
   width: 100%;
   padding: 1.5rem 0;
+  background-color: #040918;
 }
 
 .hero-description p {
@@ -97,28 +98,6 @@ nav.custom-navbar {
   color: #e0e3ed;
 }
 
-@media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 103%;
-    left: 0;
-    width: 100%;
-    background-color: #040918;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .navbar-links.open {
-    display: flex;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-}
-
 /* Full-width hero image */
 /* Hero Image Container */
 .hero-image-container {
@@ -156,14 +135,6 @@ nav.custom-navbar {
   transition: background-color 0.3s ease;
 }
 
-/* Hover Effect
-.hero-image-container:hover .hero-image {
-  filter: grayscale(0) brightness(1); 
-}
-
-.hero-image-container:hover::before {
-  background-color: transparent;
-} */
 
 /* Left corner design */
 .header-left-design {
@@ -210,106 +181,10 @@ nav.custom-navbar {
   rotate: 170deg;
 }
 
-/* making it responsive */
-@media (min-width: 810px) {
-  .hero-section {
-    padding: 6rem 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .hero-description {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    max-width: 1000px;
-  }
-
-  h1 {
-    flex: 1;
-    text-align: right;
-    margin-right: 2rem;
-  }
-
-  .hero-description p {
-    flex: 1;
-    margin: 0;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero-section {
-    padding: 6rem 3rem;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .hero-description p {
-    font-size: 1.2rem;
-  }
-}
-
-/* Hiding designs on smaller screens */
-@media (max-width: 768px) {
-  .header-left-design,
-  .header-right-design,
-  .header-top-right-design {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1.2em;
-  }
-
-  .hero-section {
-    padding: 4rem 1.5rem;
-  }
-
-  .hero-description p {
-    max-width: 100%;
-  }
-
-  .navbar-brand {
-    font-size: 1rem;
-  }
-  .navbar-links {
-    padding: 1rem;
-  }
-
-  .navbar-links li a {
-    font-size: 0.8rem;
-    padding: 0;
-  }
-
-  .hamburger-menu {
-    font-size: 1.5rem;
-  }
-
-  .hero-image-container {
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-  }
-
-  .header-left-design,
-  .header-right-design,
-  .header-top-right-design {
-    display: none;
-  }
-}
-
 /* About Section Styling */
 .einstein-section {
   background-color: rgb(111, 255, 233);
-  padding: 5rem 2rem;
+  padding: 0rem 2rem;
   margin: 4rem 0;
   text-align: center;
   display: flex;
@@ -419,91 +294,6 @@ nav.custom-navbar {
 /* Flip animated */
 .flip-container.flipped .flipper {
   transform: rotateY(180deg);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .flipper {
-    width: 350px;
-    height: 220px;
-  }
-
-  .thinking-bubble {
-    width: 300px;
-    height: 180px;
-  }
-
-  .thinking-bubble:before {
-    width: 40px;
-    height: 40px;
-    bottom: -35px;
-    left: 100px;
-  }
-
-  .thinking-bubble:after {
-    width: 20px;
-    height: 20px;
-    bottom: -55px;
-    left: 120px;
-  }
-
-  .thinking-bubble h2 {
-    font-size: 1.4rem;
-  }
-
-  .did-you-know h3 {
-    font-size: 1.3rem;
-  }
-
-  .did-you-know p {
-    font-size: 0.8rem;
-    line-height: 1;
-  }
-}
-
-@media (max-width: 480px) {
-  .einstein-section {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-  }
-  .flipper {
-    width: 280px;
-    height: 180px;
-  }
-
-  .thinking-bubble {
-    width: 250px;
-    height: 150px;
-  }
-
-  .thinking-bubble:before {
-    width: 35px;
-    height: 35px;
-    bottom: -30px;
-    left: 80px;
-  }
-
-  .thinking-bubble:after {
-    width: 15px;
-    height: 15px;
-    bottom: -45px;
-    left: 105px;
-  }
-
-  .thinking-bubble h2 {
-    font-size: 1.1rem;
-  }
-
-  .did-you-know h3 {
-    font-size: 1rem;
-  }
-
-  .did-you-know p {
-    font-size: 0.7rem;
-  }
 }
 
 .personal-life-section {
@@ -648,31 +438,6 @@ nav.custom-navbar {
   background-color: rgba(255, 255, 255, 0.104);
   border-left-color: #e0e3ed;
   transition: background-color 0.4s ease, border-left-color 0.4s ease;
-}
-
-@media (max-width: 768px) {
-  .career-section {
-    padding: 3rem 1rem;
-  }
-
-  .career-section h2 {
-    font-size: 2.5rem;
-    font-family: "Old Standard TT", serif;
-  }
-
-  .career-item h3 {
-    font-size: 1.2rem;
-    font-family: "Old Standard TT", serif;
-  }
-
-  .career-item p {
-    font-size: 1rem;
-    font-family: "Old Standard TT", serif;
-  }
-
-  .career-item i {
-    font-size: 2.5rem;
-  }
 }
 
 /* Achievements Section Styling */
@@ -849,110 +614,59 @@ nav.custom-navbar {
   right: -200px;
 }
 
-/* RESPONSIVE STYLING */
+/* Books page */
 
-/* Medium Screens (Tablets) */
-@media (max-width: 1024px) {
-  .learn-more-section {
-    padding: 80px;
-  }
-
-  .learn-more-content h2 {
-    font-size: 2rem;
-  }
-
-  .learn-more-content p {
-    font-size: 1rem;
-    padding: 0 10rem;
-  }
-
-  .learn-more-button {
-    padding: 1rem 25px;
-    font-size: 1.1rem;
-  }
-
-  .design-element-left {
-    width: 200px;
-    height: 200px;
-    left: -100px;
-  }
-
-  .design-element-right {
-    width: 300px;
-    height: 300px;
-    right: -150px;
-  }
+.showcase {
+  color: #e0e3ed;
+  margin: 7rem 3rem;
+}
+.showcase-title h1 {
+  font-size: 5rem;
+  color: #000;
 }
 
-/* Small Screens (Mobile) */
-@media (max-width: 768px) {
-  .learn-more-section {
-    padding: 50px 30px;
-  }
-
-  .learn-more-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .learn-more-content p {
-    font-size: 0.85rem;
-    padding: 0 5rem;
-  }
-
-  .buttons-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .learn-more-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-
-  .design-element-left {
-    width: 150px;
-    height: 150px;
-    left: -80px;
-  }
-
-  .design-element-right {
-    width: 200px;
-    height: 200px;
-    right: -100px;
-  }
+.showcase-title p {
+  font-size: 2rem;
+  color: #000;
+  margin: 2rem 0;
 }
 
-/* Extra Small Screens (Mobile) */
-@media (max-width: 480px) {
-  .learn-more-section {
-    padding: 40px 15px;
-  }
+/* Books Section Styling */
 
-  .learn-more-content h2 {
-    font-size: 1.5rem;
-  }
+.book {
+  text-align: center;
+  background-color: #e0e3ed;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-  .learn-more-content p {
-    font-size: 0.75rem;
-    padding: 0 2rem;
-  }
+.book img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
 
-  .learn-more-button {
-    padding: 8px 18px;
-    font-size: 1rem;
-  }
+.book:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
 
-  .design-element-left {
-    width: 100px;
-    height: 100px;
-    left: -50px;
-  }
+.book .description h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #040918;
+}
 
-  .design-element-right {
-    width: 150px;
-    height: 150px;
-    right: -75px;
-  }
+.book .description p {
+  font-size: 1rem;
+  color: #040918;
+  line-height: 1.5;
+  margin: 0.5rem 0;
 }
 
 /**************boook section*****************/
@@ -1034,61 +748,6 @@ nav.custom-navbar {
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .books-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .book-person img {
-    max-width: 250px;
-    width: 20rem;
-    height: 16rem;
-    border-radius: 50%;
-    transition: filter 1.3s ease;
-    margin: 1rem;
-  }
-
-  .book-image img {
-    max-width: 250px;
-    width: 20rem;
-    height: 16rem;
-    border-radius: 2rem;
-    transition: filter 1.3s ease;
-    margin: 1rem;
-  }
-
-  .book-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .book-content p,
-  .person-description p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-image img {
-    max-width: 200px;
-  }
-
-  .book-content h2 {
-    font-size: 1.1rem;
-  }
-
-  .book-content p,
-  .person-description p {
-    font-size: 0.8rem;
-  }
-
-  .book-buttons{
-    text-align: center;
-  }
-}
-/* ***************************************** */
-
 /* Footer Styling */
 
 .footer-section {
@@ -1140,8 +799,201 @@ nav.custom-navbar {
   color: #12ffdc;
 }
 
-/* Responsive Adjustments */
+/* RESPONSIVE STYLING */
+@media (min-width: 1200px) {
+  .hero-section {
+    padding: 6rem 3rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .hero-description p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 810px) {
+  .hero-section {
+    padding: 6rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-description {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1000px;
+  }
+
+  h1 {
+    flex: 1;
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  .hero-description p {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .learn-more-section {
+    padding: 80px;
+  }
+
+  .learn-more-content h2 {
+    font-size: 2rem;
+  }
+
+  .learn-more-content p {
+    font-size: 1rem;
+    padding: 0 10rem;
+  }
+
+  .learn-more-button {
+    padding: 1rem 25px;
+    font-size: 1.1rem;
+  }
+
+  .design-element-left {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+  }
+
+  .design-element-right {
+    width: 300px;
+    height: 300px;
+    right: -150px;
+  }
+}
+
+/*Working on smaller screen (Mobiles)*/
+
 @media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 103%;
+    left: 0;
+    width: 100%;
+    background-color: #040918;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* design hiding on mobile */
+  .header-left-design,
+  .header-right-design,
+  .header-top-right-design {
+    display: none;
+  }
+
+  .flipper {
+    width: 350px;
+    height: 220px;
+  }
+
+  .thinking-bubble {
+    width: 300px;
+    height: 180px;
+  }
+
+  .thinking-bubble:before {
+    width: 40px;
+    height: 40px;
+    bottom: -35px;
+    left: 100px;
+  }
+
+  .thinking-bubble:after {
+    width: 20px;
+    height: 20px;
+    bottom: -55px;
+    left: 120px;
+  }
+
+  .thinking-bubble h2 {
+    font-size: 1.4rem;
+  }
+
+  .did-you-know h3 {
+    font-size: 1.3rem;
+  }
+
+  .did-you-know p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  .career-section {
+    padding: 3rem 1rem;
+  }
+
+  .career-section h2 {
+    font-size: 2.5rem;
+    font-family: "Old Standard TT", serif;
+  }
+
+  .career-item h3 {
+    font-size: 1.2rem;
+    font-family: "Old Standard TT", serif;
+  }
+
+  .career-item p {
+    font-size: 1rem;
+    font-family: "Old Standard TT", serif;
+  }
+
+  .career-item i {
+    font-size: 2.5rem;
+  }
+
+  .books-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-person img {
+    max-width: 250px;
+    width: 20rem;
+    height: 16rem;
+    border-radius: 50%;
+    transition: filter 1.3s ease;
+    margin: 1rem;
+  }
+
+  .book-image img {
+    max-width: 250px;
+    width: 20rem;
+    height: 16rem;
+    border-radius: 2rem;
+    transition: filter 1.3s ease;
+    margin: 1rem;
+  }
+
+  .book-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .book-content p,
+  .person-description p {
+    font-size: 0.9rem;
+  }
+
   .footer-links {
     flex-direction: column;
   }
@@ -1154,9 +1006,166 @@ nav.custom-navbar {
   .small-section {
     padding: 2rem;
   }
+
+  .learn-more-section {
+    padding: 50px 30px;
+  }
+
+  .learn-more-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .learn-more-content p {
+    font-size: 0.85rem;
+    padding: 0 5rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .learn-more-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .design-element-left {
+    width: 150px;
+    height: 150px;
+    left: -80px;
+  }
+
+  .design-element-right {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+  }
+
+  .books {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .book img {
+    max-width: 150px;
+  }
+
+  .book .description h3 {
+    font-size: 1.2rem;
+  }
+
+  .book .description p {
+    font-size: 0.9rem;
+  }
 }
 
+/* Small Screens (Mobile) */
+
 @media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+  }
+
+  .hero-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-description p {
+    max-width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar-links {
+    padding: 1rem;
+  }
+
+  .navbar-links li a {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .hamburger-menu {
+    font-size: 1.5rem;
+  }
+
+  .hero-image-container {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  .header-left-design,
+  .header-right-design,
+  .header-top-right-design {
+    display: none;
+  }
+
+  .einstein-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .flipper {
+    width: 280px;
+    height: 180px;
+  }
+
+  .thinking-bubble {
+    width: 250px;
+    height: 150px;
+  }
+
+  .thinking-bubble:before {
+    width: 35px;
+    height: 35px;
+    bottom: -30px;
+    left: 80px;
+  }
+
+  .thinking-bubble:after {
+    width: 15px;
+    height: 15px;
+    bottom: -45px;
+    left: 105px;
+  }
+
+  .thinking-bubble h2 {
+    font-size: 1.1rem;
+  }
+
+  .did-you-know h3 {
+    font-size: 1rem;
+  }
+
+  .did-you-know p {
+    font-size: 0.7rem;
+  }
+
+  .book-image img {
+    max-width: 200px;
+  }
+
+  .book-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .book-content p,
+  .person-description p {
+    font-size: 0.8rem;
+  }
+
+  .book-buttons {
+    text-align: center;
+  }
+
   /* research section */
   .research-section h2 {
     font-family: "Elsie", sans-serif;
@@ -1236,6 +1245,52 @@ nav.custom-navbar {
   }
 
   .footer-copyright {
+    font-size: 0.8rem;
+  }
+
+  /* books page */
+  .learn-more-section {
+    padding: 40px 15px;
+  }
+
+  .learn-more-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .learn-more-content p {
+    font-size: 0.75rem;
+    padding: 0 2rem;
+  }
+
+  .learn-more-button {
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+
+  .design-element-left {
+    width: 100px;
+    height: 100px;
+    left: -50px;
+  }
+
+  .design-element-right {
+    width: 150px;
+    height: 150px;
+    right: -75px;
+  }
+  .books {
+    padding: 4rem 1rem;
+  }
+
+  .book img {
+    max-width: 120px;
+  }
+
+  .book .description h3 {
+    font-size: 1rem;
+  }
+
+  .book .description p {
     font-size: 0.8rem;
   }
 }
