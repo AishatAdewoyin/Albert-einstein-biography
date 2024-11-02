@@ -13,22 +13,23 @@ body {
 
 h1 {
   font-family: "Elsie", sans-serif;
-  font-size: 7rem;
+  font-size: 8rem;
   color: #12ffdc;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   color: #12ffdc;
   margin: 3rem 0;
 }
 
+/* Hero Section Styling */
 .hero-section {
   background-color: #040918;
-  padding: 6rem 3rem;
-  min-height: 50vh;
-  max-width: 100%;
+  padding: 8rem 2rem;
+  max-height: 50vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,14 +43,38 @@ h2 {
   text-align: center;
   width: 100%;
   padding: 1.5rem 0;
-  background-color: #040918;
+}
+
+.hero-description h1 {
+  font-size: 7rem;
+  text-align: center;
 }
 
 .hero-description p {
+  font-size: 1.1rem;
   max-width: 700px;
   color: #2e9b91;
+  margin: 1rem 0;
 }
 
+@media (min-width: 1024px) {
+  .hero-description {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  .hero-description h1 {
+    flex: 1;
+    text-align: right;
+    margin-right: 1.5rem;
+  }
+
+  .hero-description p {
+    flex: 1;
+    text-align: left;
+  }
+}
 /* Navbar Styling */
 nav.custom-navbar {
   background-color: #040918;
@@ -135,7 +160,6 @@ nav.custom-navbar {
   pointer-events: none;
   transition: background-color 0.3s ease;
 }
-
 
 /* Left corner design */
 .header-left-design {
@@ -371,21 +395,7 @@ nav.custom-navbar {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .personal-life-section {
-    padding: 3rem 1rem;
-  }
-
-  .personal-life-section h2 {
-    font-size: 2rem;
-  }
-
-  .personal-life-box p {
-    font-size: 1rem;
-  }
-
-  .personal-life-box i {
-    font-size: 4rem;
-  }
+ 
 }
 
 /* Career Section Styling */
@@ -801,46 +811,6 @@ nav.custom-navbar {
 }
 
 /* RESPONSIVE STYLING */
-@media (min-width: 1200px) {
-  .hero-section {
-    padding: 6rem 3rem;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .hero-description p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 810px) {
-  .hero-section {
-    padding: 6rem 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .hero-description {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    max-width: 1000px;
-  }
-
-  h1 {
-    flex: 1;
-    text-align: right;
-    margin-right: 2rem;
-  }
-
-  .hero-description p {
-    flex: 1;
-    margin: 0;
-    text-align: left;
-  }
-}
-
 @media (max-width: 1024px) {
   .learn-more-section {
     padding: 80px;
@@ -901,6 +871,22 @@ nav.custom-navbar {
   .header-right-design,
   .header-top-right-design {
     display: none;
+  }
+
+  .personal-life-section {
+    padding: 3rem 1rem;
+  }
+
+  .personal-life-section h2 {
+    font-size: 1rem;
+  }
+
+  .personal-life-box p {
+    font-size: 1rem;
+  }
+
+  .personal-life-box i {
+    font-size: 4rem;
   }
 
   .flipper {
@@ -1058,6 +1044,8 @@ nav.custom-navbar {
   .book .description p {
     font-size: 0.9rem;
   }
+
+
 }
 
 /* Small Screens (Mobile) */
